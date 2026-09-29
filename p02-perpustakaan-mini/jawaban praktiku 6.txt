@@ -1,0 +1,21 @@
+nama	: Ricky Adbillah
+NPM	: 2410010448
+Kelas	: 5C REG BJM
+
+Jawaban Eksperimen Praktikum 6
+
+1. Menambahkan `Koleksi x = new Koleksi("X01", "Uji", 2026);`
+
+Program akan mengalami error pada saat kompilasi karena `Koleksi` merupakan abstract class. Abstract class tidak dapat dibuat objeknya secara langsung menggunakan `new`.
+
+2. Mengubah nama method `hitungDenda` menjadi `hitungdenda`
+
+Jika anotasi `@Override` masih digunakan, compiler akan memberikan error karena method `hitungdenda` tidak sama dengan method `hitungDenda` yang ada pada interface/kelas induknya. Jika `@Override` dihapus, method tersebut dianggap sebagai method baru sehingga tidak lagi melakukan overriding terhadap `hitungDenda`.
+
+3. Menambahkan `new Buku("B009", "", 2020, "Anonim")`
+
+Saat program dijalankan, akan terjadi `IllegalArgumentException` dengan pesan "Judul tidak boleh kosong", karena constructor `Koleksi` memeriksa bahwa judul tidak boleh `null` atau kosong.
+
+4. Mengubah `private StatusKoleksi status` menjadi `public` dan mengubah status B002 langsung dari `main`
+
+Hal tersebut melanggar prinsip encapsulation karena data `status` yang seharusnya dilindungi dapat diubah secara langsung dari luar kelas. Pada rancangan awal, status hanya dapat diubah melalui method `pinjam()` dan `kembalikan()`.
