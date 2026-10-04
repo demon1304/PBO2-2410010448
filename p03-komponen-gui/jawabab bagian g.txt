@@ -1,0 +1,11 @@
+nama	: Ricky Abdillah
+NPM	: 2410010448
+Kelas	: 5c REG BJM
+
+1. Top-level container adalah wadah utama untuk menampilkan aplikasi GUI. Contoh: JFrame.
+Intermediate container adalah wadah di dalam top-level container untuk mengelompokkan komponen. Contoh: JPanel.
+Atomic component adalah komponen yang langsung digunakan untuk interaksi dengan pengguna. Contoh: JButton.
+2. Kedua JRadioButton diberi buttonGroup yang sama agar hanya satu pilihan yang dapat dipilih dalam satu waktu. Misalnya pilihan Laki-laki atau Perempuan.
+3. JComboBox dipilih jika pilihan cukup banyak dan ingin menghemat ruang pada form. JRadioButton lebih cocok jika pilihan sedikit dan ingin semua pilihan langsung terlihat.
+4. initComponents() tidak boleh diedit langsung karena kode tersebut dihasilkan dan dikelola oleh GUI Builder NetBeans. Jika diedit manual, perubahan dapat tertimpa ketika form didesain ulang. Kode tambahan seharusnya ditulis di luar initComponents(), misalnya di constructor setelah pemanggilan initComponents() atau pada method event.
+5. FlatLightLaf.setup() dipanggil sebelum form dibuat agar tampilan FlatLaf sudah terpasang ketika komponen-komponen form dibuat. Dengan begitu, komponen menggunakan tampilan FlatLaf sejak awal.
