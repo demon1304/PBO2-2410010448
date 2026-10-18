@@ -9,7 +9,8 @@ Jawaban: Tombol-tombol menjadi rata tengah. Ketika jendela diperkecil, tombol ya
 3. Pada gridPanel, ubah Rows menjadi 0 dan Columns menjadi 2. Berapa baris yang terbentuk dan mengapa?
 Jawaban: Terbentuk 5 baris dan 2 kolom. Karena terdapat 9 tombol dan setiap baris menampung 2 tombol, maka diperlukan 5 baris; baris terakhir hanya berisi 1 tombol.
 
-4. Pada boxPanel, atur maximumSize keempat tombol menjadi lebar 32767 dan tinggi sama dengan tinggi tombol. Bagaimana lebar tombol berubah? Apa fungsi Vertical Strut?
+
+5. Pada boxPanel, atur maximumSize keempat tombol menjadi lebar 32767 dan tinggi sama dengan tinggi tombol. Bagaimana lebar tombol berubah? Apa fungsi Vertical Strut?
 Jawaban: Tombol dapat melebar mengikuti ruang horizontal yang tersedia karena batas maksimum lebarnya diperbesar. Vertical Strut berfungsi memberikan jarak vertikal di antara tombol.
 
 pertanyaan eksperimen 4
